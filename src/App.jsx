@@ -1,12 +1,13 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./pages/Navbar/Navbar";
 import Header from "./pages/Header/Header";
-import OpPharmacyBilling from './pages/OpPharmacyBilling/OpPharmacyBilling';
 
 import Payment from "./pages/Payment";
 import CreateUser from "./pages/CreateUser.jsx";
 import NoPage from "./pages/NoPage";
 import CreateMed from "./pages/CreateMed";
+
+import './App.css'
 
 export default function App() {
   return (
@@ -14,9 +15,10 @@ export default function App() {
     <Navbar />
       <Routes>
           <Route path="/" element={<Header />} />
-          <Route path='/OpPharmacyBilling' element={<OpPharmacyBilling />} />
+          <Route path='/OpPharmacyBilling' element={<Payment />} />
+          {/* <Route path='/OpPharmacyBilling' element={<OpPharmacyBilling />} /> */}
 
-          <Route path="payment" element={<Payment />} />
+          {/* <Route path="payment" element={<Payment />} /> */}
           <Route path="createuser" element={<CreateUser />} />
           <Route path="medicine" element={<CreateMed />} />
           <Route path="*" element={<NoPage />} />
