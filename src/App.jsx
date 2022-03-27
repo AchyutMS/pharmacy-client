@@ -8,6 +8,7 @@ import NoPage from "./pages/NoPage";
 import CreateMed from "./pages/CreateMed";
 
 import './App.css'
+import ReturnPage from "./pages/ReturnPage";
 
 export default function App() {
   return (
@@ -16,9 +17,8 @@ export default function App() {
       <Routes>
           <Route path="/" element={<Header />} />
           <Route path='/OpPharmacyBilling' element={<Payment />} />
-          {/* <Route path='/OpPharmacyBilling' element={<OpPharmacyBilling />} /> */}
+          <Route path='/return' element={<ReturnPage />} />
 
-          {/* <Route path="payment" element={<Payment />} /> */}
           <Route path="createuser" element={<CreateUser />} />
           <Route path="medicine" element={<CreateMed />} />
           <Route path="*" element={<NoPage />} />
@@ -27,22 +27,3 @@ export default function App() {
   );
 }
 
-
-// import { Route, Routes } from 'react-router-dom';
-// import Header from './pages/Header/Header';
-// import Navbar from './pages/Navbar/Navbar';
-// import OpPharmacyBilling from './pages/OpPharmacyBilling/OpPharmacyBilling';
-
-// const App = () => {
-//   return (
-//     <div>
-//       <Navbar />
-//        <Routes>
-//         <Route path='/' element={<Header />} />
-//         <Route path='/OpPharmacyBilling' element={<OpPharmacyBilling />} />
-//       </Routes>
-//     </div>
-//   )
-// }
-
-// export default App;

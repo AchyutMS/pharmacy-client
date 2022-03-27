@@ -62,10 +62,6 @@ function PaymentMain({ UID, onSub, error }) {
   return (
     <div className="PaymentMain">
 
-      {/* <div className="inputBoxArea"></div> */}
-
-      {/* <h1>UID : {UID}</h1> */}
-
       <div className='Block1'>
       <form onSubmit={handleSubmit}>
         <input placeholder='Medicine Name' type="text" value={medName} onChange={e => setMedName(e.target.value)} />
