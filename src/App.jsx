@@ -3,6 +3,7 @@ import Navbar from "./pages/Navbar/Navbar";
 import Header from "./pages/Header/Header";
 
 import Payment from "./pages/Payment";
+import ReturnPage from "./pages/ReturnPage";
 import CreateUser from "./pages/CreateUser.jsx";
 import NoPage from "./pages/NoPage";
 import CreateMed from "./pages/CreateMed";
@@ -16,6 +17,7 @@ export default function App() {
       <Routes>
           <Route path="/" element={<Header />} />
           <Route path='/OpPharmacyBilling' element={<Payment />} />
+          <Route path='/return' element={<ReturnPage />} />
           {/* <Route path='/OpPharmacyBilling' element={<OpPharmacyBilling />} /> */}
 
           {/* <Route path="payment" element={<Payment />} /> */}

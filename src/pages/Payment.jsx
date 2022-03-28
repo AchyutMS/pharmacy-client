@@ -119,7 +119,7 @@ export default function Payment() {
             error={err => setError(err)}
             onSub={res => (
               setUID(''),
-              setStatus2(''),
+              // setStatus2(''),
               setName(''),
               setPhoneNum(''),
               setEmail(''),
@@ -127,7 +127,8 @@ export default function Payment() {
               setSex(''),
               setCity(''),
               setState(''),
-              setCountry(''))
+              setCountry(''),
+              setStatus(''))
             }
           />
           : null

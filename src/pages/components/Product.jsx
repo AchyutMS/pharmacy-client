@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 export default function Product(props) {
   const { product, onAdd, onRemove, discount } = props;
