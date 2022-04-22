@@ -7,6 +7,7 @@ import ReturnPage from "./pages/ReturnPage";
 import CreateUser from "./pages/CreateUser.jsx";
 import NoPage from "./pages/NoPage";
 import CreateMed from "./pages/CreateMed";
+import StoreStock from "./pages/StoreStock"
 
 import './App.css'
 
@@ -16,6 +17,7 @@ export default function App() {
     <Navbar />
       <Routes>
           <Route path="/" element={<Header />} />
+          <Route path='/store-stock' element={<StoreStock />} />
           <Route path='/OpPharmacyBilling' element={<Payment />} />
           <Route path='/return' element={<ReturnPage />} />
           {/* <Route path='/OpPharmacyBilling' element={<OpPharmacyBilling />} /> */}
@@ -29,22 +31,3 @@ export default function App() {
   );
 }
 
-
-// import { Route, Routes } from 'react-router-dom';
-// import Header from './pages/Header/Header';
-// import Navbar from './pages/Navbar/Navbar';
-// import OpPharmacyBilling from './pages/OpPharmacyBilling/OpPharmacyBilling';
-
-// const App = () => {
-//   return (
-//     <div>
-//       <Navbar />
-//        <Routes>
-//         <Route path='/' element={<Header />} />
-//         <Route path='/OpPharmacyBilling' element={<OpPharmacyBilling />} />
-//       </Routes>
-//     </div>
-//   )
-// }
-
-// export default App;

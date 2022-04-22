@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import axios from 'axios'
-// import MedicinePage from './MedicinePage'
-// import DiscountPage from './DiscountPage'
-// import MedPage from './MedPage'
+
 import PaymentMain from './PaymentMain'
 
 export default function Payment() {
@@ -50,14 +48,9 @@ export default function Payment() {
       ))
   }
 
-  // setTimeout(
-  //   function () {
-  //     setError('')
-  // },5000)
 
   return (
     <div className='Payment'>
-      {/* <img src="/images/sims-background.png" className='backGroundImage'/> */}
       <p className='heading'>OP Pharmacy Billing</p>
       <p>{error}</p>
 
@@ -108,10 +101,6 @@ export default function Payment() {
         </div>
       </div>
 
-
-      {/* <MedPage /> */}
-
-
       {
         status === 'display' ?
           <PaymentMain
@@ -134,31 +123,6 @@ export default function Payment() {
           : null
       }
 
-
-      {/* <MedicinePage
-        Total={total => setDetails(total)}
-        medReq={med => setMedRequired(med)}
-      /> */}
-
-
-      {/* { console.log('****',details) }
-      { console.log('medicinie req',medRequired) }
-
-      TotalCost : {details[0]} */}
-
-      {/* <DiscountPage details={details[1]} medReq={medRequired} /> */}
-
-
-
-
-
-
-
-
-
-      {/* <MedicinePage
-        Total={total => setDetails(total)}
-      /> */}
     </div>
   )
 }

@@ -22,7 +22,7 @@ export default function ReturnMain(props) {
   return (
   <div>
    
-   <div className="col">
+   <div className="TableBlock">
       <table>
       <tr>
             <th>Name....</th>

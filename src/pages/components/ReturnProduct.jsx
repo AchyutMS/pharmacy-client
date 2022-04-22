@@ -7,13 +7,6 @@ export default function ReturnProduct(props) {
     product.returnQuantity = returnQuantity
    product.returnAmount = (returnQuantity*product.price) - (returnQuantity*product.price * service /100)
    console.log(product.returnQuantity)
-//     console.log('total',total)
-//   const handleReturnQuantity =(e) =>{
-//     setReturnQuantity(e.target.value)
-//     setTotal((returnQuantity*product.price))
-//     // console.log("returnQuantity: ",returnQuantity)
-//     // console.log('total: ',total)
-//   }
 
 
   return (

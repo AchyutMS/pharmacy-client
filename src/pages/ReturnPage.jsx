@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
 import ReturnMain from './components/ReturnMain'
+import UserInfo from './components/UserInfo'
 
 export default function ReturnPage() {
 
@@ -9,6 +10,8 @@ export default function ReturnPage() {
     const [userData, setUserData] = useState([])
     const [billNo, setBillNo] = useState('')
     const [searchOn, setSearchOn] = useState(false)
+
+
 
     const billNoHandler = (e) => {
         e.preventDefault()
@@ -33,11 +36,19 @@ export default function ReturnPage() {
       console.log('userData',userData)
 
     return (
-        <div>
+        <div className='Payment'>
+            <p className='heading'>Medicine Return</p>
             <form onSubmit={billNoHandler}>
-                <input type="text" value={billNo} required placeholder='Bill No.' onChange={e => setBillNo(e.target.value)} />
-                <button type="submit">Search</button>
+                <div className="inputBox">
+                    <label>BillNo:</label>
+                    <input type="text" value={billNo} required placeholder='Bill No.' onChange={e => setBillNo(e.target.value)} />
+                    <button className='btn' type="submit">Search</button>
+                </div>
             </form>
+            
+            {userData !=0  && <UserInfo userData={userData}/>}
+
+            
 
         {searchOn ? <ReturnMain medArray={medArray} />:console.log('waiting for input')}
              
